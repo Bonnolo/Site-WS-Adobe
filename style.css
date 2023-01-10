@@ -43,3 +43,48 @@ h3{
     background-color: #A4BFEB;
     margin-bottom: 5px;
 }
+header{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.slider-frame{
+    overflow: hidden;
+    height: 1080px;
+    width: 1903px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* ----- Animation ------ */
+@-webkit-keyframes slide_animation{
+    0%   { left: 5760px; }
+    10%  { left: 5760px; }
+    20%  { left: 5760px; }
+    30%  { left: 3840px; }
+    40%  { left: 3840px; }
+    50%  { left: 3840px; }
+    60%  { left: 1920px; }
+    70%  { left: 1920px; }
+    80%  { left: 1920px; }
+    90%  { left:    0px; }
+    100% { left:    0px; }
+}
+.slide-images{
+    width: 7680px;
+    height: 1080px;
+    margin: 0 0 0 -5760px;
+    position: relative;
+    z-index: -1;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 17s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.img-container{
+    height: 1080px;
+    width: 1920px;
+    position: relative;
+    float: right;
+}
+    /* ----- Animation END ------ */
