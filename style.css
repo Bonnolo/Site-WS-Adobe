@@ -7,7 +7,39 @@
             box-sizing: border-box;
     font-size: 100%;
 }
-@font-face {
-    font-family: BrutGrotesque; /* da modificare */
-    src: url("font/BrutGrotesque-Regular.otf") format("opentype");
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Pridi&display=swap');
+
+body{
+    background-color: #686868;
+}
+.logo{
+    text-align: center;
+    padding: 16px;
+}
+h3{
+    font-family: 'Pridi';
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gap{
+    padding: 20px;
+}
+.button{
+    background-color: #686868;
+    opacity: 50%;
+    width: 130px;
+    border-radius: 44px;
+    margin: 5px 3px;
+    text-align: center;
+    text-decoration: none;
+}
+.headerbg{
+    background-color: #A4BFEB;
+    margin-bottom: 5px;
 }
