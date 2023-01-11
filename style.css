@@ -28,13 +28,12 @@ h3{
     justify-content: center;
 }
 .gap{
-    padding: 20px;
+    padding: 10px 10px;
 }
 .button{
     background-color: #686868;
     opacity: 50%;
-    width: 130px;
-    border-radius: 44px;
+    border-radius: 22px;
     margin: 5px 3px;
     text-align: center;
     text-decoration: none;
