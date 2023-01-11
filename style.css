@@ -45,6 +45,7 @@ h3{
 }
 header{
     position: fixed; /* Set the navbar to fixed position */
+    z-index: 100;
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
@@ -88,3 +89,39 @@ header{
     float: right;
 }
     /* ----- Animation END ------ */
+.grid2x2 {
+    margin-top: 245px;
+    margin-bottom: 245px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.grid2x2 > div > div > h3{
+    font-size: 27px;
+    text-shadow: 2px 2px 4px black;
+     /* distanza verticale distanza orizzontale e sfumatura */
+}
+.box {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 600px;
+    height: 450px;
+}
+.resize-img{
+    object-fit: cover;
+    overflow: hidden;
+}
+.ontop{
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+
