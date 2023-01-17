@@ -8,14 +8,18 @@
     <meta name="description" content="Sito a scopo didattico BNT Racing">
     <meta name="keywords" content="WS Adobe, Web, Milano, Coding, Accademia Web">
     <link rel="stylesheet" href="style.css">
-    <title>BNT Racing</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="shortcut icon" href="img/Logo BNT Racingnero.png">
+    <title>BNT Racing - Homepage</title>
 </head>
 <body>
     <header>
+
         <!-- logo -->
         <div class="logo headerbg">
             <a href="index.html"><img src="img/Logo BNT Racing.png" alt="Logo BNT Racing"></a>
         </div>
+
         <!-- nav menu -->
         <div class="flex">
             <button class="button"><a href="#"><h3 class="gap"> Shop </h3></a></button>
@@ -23,8 +27,10 @@
             <button class="button"><a href="#"><h3 class="gap"> Contatti </h3></a></button>
             <button class="button"><a href="#"><h3 class="gap"> Prodotti </h3></a></button>
         </div>
+
     </header>
     <main>
+
         <!-- sliding - imgs -->
         <div class="slider-frame">
             <div class="slide-images">
@@ -42,38 +48,100 @@
                 </div>
             </div>
         </div>
+
         <!-- 4 boxes -->
-        <div class="grid2x2">
-            <div class="box">
-                <div class="ontop"><h3>Shop</h3></div>
-                <img class="resize-img" src="img/R6.png" alt="">
+        <div class="formspacing">
+            <div class="inputboxes sx">
+                <div>
+                    <h3 class="ontop">Shop</h3>
+                    <img class="resize-img" src="img/R6.png" width="500px" alt="">
+                </div>
             </div>
-            <div class="box">
-                <div class="ontop"><h3>Omologazioni</h3></div>
-                <img class="resize-img" src="img/images.png" alt="">
+            <div class="inputboxes dx">
+                <div>
+                    <h3 class="ontop">Omologazioni</h3>
+                    <img class="resize-img" src="img/images.png" width="500px" alt="">
+                </div>
             </div>
-            <div class="box">
-                <div class="ontop"><h3>Official Dealer</h3></div>
-                <img class="resize-img" src="img/Logo BNT Racing.png" alt="">
+            <div class="inputboxes sx">
+                <div>
+                    <h3 class="ontop">OfficialDealer</h3>
+                    <img class="resize-img" src="img/Logo BNT Racing.png" width="500px" alt="">
+                </div>
             </div>
-            <div class="box">
-                <div class="ontop"><h3>Contatti</h3></div>
-                <img class="resize-img" src="img/Quartiere generale.png" alt="">
+            <div class="inputboxes dx">
+                <div>
+                    <h3 class="ontop">Contatti</h3>
+                    <img class="resize-img" src="img/Quartiere generale.png" width="500px" alt="">
+                </div>
             </div>
         </div>
-        <div>
-            <h2>Omologazione</h2>
-            <div>
-                <p>I nostri scarichi stradali sono omologati e certificati
-                secondo le norme europee. All'acquisto di un nostro
-                prodotto riceverete anche l'omologazione dello scarico
-                per circolare su strada.</p>
-                <img src="img/Omologazione_Euro5_FacSimile-p17usy40llm18vkmiy4avnjf9r2vyib0jpr1sl9w5c.png" alt="">
+
+        <!-- SEZIONE OMOLOGAZIONI -->
+        <div class="paging">
+            <div class="center"><h2>Omologazione</h2></div>
+            <div class="flex">
+                <p class="spacingAndColor">I nostri scarichi stradali sono omologati e certificati <br> secondo le norme europee. All'acquisto di un nostro <br> prodotto riceverete anche l'omologazione dello scarico <br> per circolare su strada.</p>
+                <img class="moveright" src="img/Omologazione_Euro5_FacSimile-p17usy40llm18vkmiy4avnjf9r2vyib0jpr1sl9w5c.png" alt="">
+            </div>
+        </div>
+
+        <!-- SEZIONE CONTATTI -->
+        <div class="center">
+            <h2>Contattaci</h2>
+        </div>
+        <div class="formspacing">
+            <div class="inputboxes border sx">
+                <input type="text" name="user_name" style="height: 28px; width: 350px; padding-left: 10px;" placeholder="Nome:" required>
+            </div>
+            <div class="inputboxes border dx">
+                <input type="text" name="user_lastname" style="height: 28px; width: 350px; padding-left: 10px;" placeholder="Cognome:" required>
+            </div>
+            <div class="inputboxes border sx">
+                <input type="text" name="user_email" style="height: 28px; width: 350px; padding-left: 10px;" placeholder="Email:" required>
+            </div>
+            <div class="inputboxes border dx">
+                <input type="text" name="user_phonenumber" style="height: 28px; width: 350px; padding-left: 10px;" placeholder="Telefono/Cellulare:">
+            </div>
+        </div>    
+        <div class="border textareabutton">
+            <div class="textareacenter">
+                <textarea type="text" name="user_message" style="height: 150px; width: 350px; padding-left: 15px; padding-top: 10px;" placeholder="Il tuo messaggio:" required></textarea>
+            </div>
+            <div class="textareacenter border">
+                <input class="contactButton" type="submit" value="Submit">
             </div>
         </div>
     </main>
-    <footer>
 
+    <footer>
+        <div class="column border">
+            <h3>BNTRacing</h3>
+            <p>
+                via Solferino 23, Milano (MI) <br>
+                Telefono: 02/1234567 <br>
+                Email: <a href="mailto:bnt@racing.it">bnt@racing.it</a>
+            </p>
+        </div>
+        <div class="column">
+            <h4>Powered by Bonny</h4>
+        </div>
+        <div class="column">
+            <div class="menu_socials">
+                <a href="#" title="facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" title="twitter" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" title="youtube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" title="instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

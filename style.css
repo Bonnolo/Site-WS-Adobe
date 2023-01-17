@@ -11,6 +11,7 @@
 
 body{
     background-color: #686868;
+    color: white;
 }
 .logo{
     text-align: center;
@@ -22,20 +23,20 @@ h3{
     font-weight: normal;
     font-size: 18px;
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 .gap{
-    padding: 10px 10px;
+    padding: 10px 22px;
 }
 .button{
-    background-color: #686868;
-    opacity: 50%;
+    background-color: #68686882;
     border-radius: 22px;
     margin: 5px 3px;
     text-align: center;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #06004da5;
+}
+a{
     text-decoration: none;
 }
 .headerbg{
@@ -49,11 +50,15 @@ header{
     width: 100%; /* Full width */
 }
 .slider-frame{
+    margin-top: 250px;
     overflow: hidden;
-    height: 1080px;
-    width: 1903px;
+    height: 220px;
+    width: 388px;
     margin-left: auto;
     margin-right: auto;
+}
+.img-container > img{
+    width: 388px;
 }
     /* ----- Animation ------ */
 @-webkit-keyframes slide_animation{
@@ -88,18 +93,12 @@ header{
     float: right;
 }
     /* ----- Animation END ------ */
-.grid2x2 {
-    margin-top: 245px;
-    margin-bottom: 245px;
-    min-height: 100%;
+.flexgrid{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-}
-.grid2x2 > div > div > h3{
-    font-size: 27px;
-    text-shadow: 2px 2px 4px black;
-     /* distanza verticale distanza orizzontale e sfumatura */
+    justify-content: center;
+    margin-top: 245px;
+    margin-bottom: 245px;
 }
 .box {
     display: flex; 
@@ -122,5 +121,133 @@ header{
     transform: translate(-50%, -50%);
     width: fit-content;
 }
-
+.paging{
+    margin-bottom: 120px;
+}
+.center{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.center > h2{
+    font-size: 50px;
+    text-decoration: 2px underline white;
+    font-weight: normal;
+    font-family: 'Pridi';
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.spacingAndColor{
+    padding-bottom: 30px;
+    align-self: center;
+    font-weight: normal;
+    font-size: 17px;
+    font-family: 'Play';
+    line-height: 27px;
+    text-align: center;
+}
+.formspacing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.inputboxes{
+    display: flex; 
+    flex-direction: column;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    margin-top: 20px;
+}
+.sx{
+    align-items: flex-end;
+}
+.dx{
+    align-items: flex-start;
+}
+.contactButton{
+    padding: 10px 5px;
+}
+.textareabutton{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.textareacenter{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chisei{
+    border: 2px solid red;
+}
+footer > div{
+    background-color: #A4BFEB;
+}
+footer .column{
+    padding: 10px 0px;
+    text-align: center;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-youtube{
+    color: #ff0000;
+}
+.fa-instagram{
+    color: #f56040;
+}
+.fa-twitter{
+    color: #00acee;
+}
+footer .column a{
+    color: #fff;
+    text-decoration: underline;
+}
+footer .column a:hover{ /* :hover è un pseudo elemento va messo vicino altrimenti non fa un c. */
+    color: #009eee;
+}
+footer{
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+footer h4{
+    text-align: center;
+}
+.menu_socials{
+    display: flex;
+    padding: 30px;
+    font-size: 50px;
+    justify-content: space-around;
+    /* flex-direction: row; */
+    /* flex-direction: row; è il default
+    flex-direction: column; colonne in verticale */
+}
+/* mediaquery */
+@media (min-width:864px){
+    .moveright{
+        padding-left: 300px;
+    }
+    .spacingAndColor{
+        text-align: left;
+    }
+    .slider-frame{
+        margin-top: 50px;
+        overflow: hidden;
+        height: 1080px;
+        width: 1903px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-container > img{
+        width: 100%;
+    }
+}
 
