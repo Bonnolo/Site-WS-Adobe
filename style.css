@@ -1,4 +1,4 @@
-/* RESET */
+/*-------------------------------------------------------------------------------- RESET --------------------------------------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +23,13 @@ h3{
     font-weight: normal;
     font-size: 18px;
 }
+p{
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Play';
+    line-height: 26px;
+    color: white;
+}
 .gap{
     padding: 10px 22px;
 }
@@ -43,14 +50,8 @@ a{
     background-color: #A4BFEB;
     margin-bottom: 5px;
 }
-header{
-    position: fixed; /* Set the navbar to fixed position */
-    z-index: 100;
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-}
 .slider-frame{
-    margin-top: 250px;
+    margin-top: 15px;
     overflow: hidden;
     height: 220px;
     width: 388px;
@@ -60,24 +61,24 @@ header{
 .img-container > img{
     width: 388px;
 }
-    /* ----- Animation ------ */
+    /* -------------------------------------------------------------------------------- Animation -------------------------------------------------------------------------------- */
 @-webkit-keyframes slide_animation{
-    0%   { left: 5760px; }
-    10%  { left: 5760px; }
-    20%  { left: 5760px; }
-    30%  { left: 3840px; }
-    40%  { left: 3840px; }
-    50%  { left: 3840px; }
-    60%  { left: 1920px; }
-    70%  { left: 1920px; }
-    80%  { left: 1920px; }
-    90%  { left:    0px; }
-    100% { left:    0px; }
+    0%   { left: 1164px;}
+    10%  { left: 1164px;}
+    20%  { left: 1164px;}
+    30%  { left: 776px; }
+    40%  { left: 776px; }
+    50%  { left: 776px; }
+    60%  { left: 388px; }
+    70%  { left: 388px; }
+    80%  { left: 388px; }
+    90%  { left:    0px;}
+    100% { left:    0px;}
 }
 .slide-images{
-    width: 7680px;
-    height: 1080px;
-    margin: 0 0 0 -5760px;
+    width: 1552px;
+    height: 220px;
+    margin: 0 0 0 -1164px;
     position: relative;
     z-index: -1;
     -webkit-animation-name: slide_animation;
@@ -87,12 +88,12 @@ header{
     -webkit-animation-play-state: running;
 }
 .img-container{
-    height: 1080px;
-    width: 1920px;
+    height: 220px;
+    width: 388px;
     position: relative;
     float: right;
 }
-    /* ----- Animation END ------ */
+    /* -------------------------------------------------------------------------------- Animation END -------------------------------------------------------------------------------- */
 .flexgrid{
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +113,7 @@ header{
 .resize-img{
     object-fit: cover;
     overflow: hidden;
+    width: 500px;
 }
 .ontop{
     position: relative;
@@ -144,9 +146,9 @@ header{
     padding-bottom: 30px;
     align-self: center;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Play';
-    line-height: 27px;
+    line-height: 26px;
     text-align: center;
 }
 .formspacing{
@@ -162,6 +164,9 @@ header{
     justify-content: center;
     align-items: center;
 }
+.inputboxes > div > img{
+    width: 388px;
+}
 .border{
     margin-top: 20px;
 }
@@ -170,6 +175,11 @@ header{
 }
 .dx{
     align-items: flex-start;
+}
+.inputs{
+    height: 28px;
+    width: 350px;
+    padding-left: 10px;
 }
 .contactButton{
     padding: 10px 5px;
@@ -187,6 +197,9 @@ header{
 }
 .chisei{
     border: 2px solid red;
+}
+footer{
+    width: 100%;
 }
 footer > div{
     background-color: #A4BFEB;
@@ -230,7 +243,37 @@ footer h4{
     /* flex-direction: row; è il default
     flex-direction: column; colonne in verticale */
 }
-/* mediaquery */
+.activebutton{
+    background-color: #06004da5;
+}
+
+/*-------------------------------------------------------------------------------- Shop -------------------------------------------------------------------------------- */
+.vehicletypebox{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.vehicletypebox > img{
+    width: 350px;
+}
+.vehicletypebox > div > h3{
+    font-family: 'Pridi';
+    color: white;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+/*-------------------------------------------------------------------------------- Chi siamo -------------------------------------------------------------------------------- */
+.verticalspace{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*-------------------------------------------------------------- mediaquery ------------------------------------------------------ */
 @media (min-width:864px){
     .moveright{
         padding-left: 300px;
@@ -248,6 +291,51 @@ footer h4{
     }
     .img-container > img{
         width: 100%;
+    }
+    header{
+        position: fixed; /* Set the navbar to fixed position */
+        z-index: 100;
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+    }
+    /*--------------------------------------------------------------------------------------- animation ---------------------------------*/
+    @-webkit-keyframes slide_animation{
+        0%   { left: 5760px; }
+        10%  { left: 5760px; }
+        20%  { left: 5760px; }
+        30%  { left: 3840px; }
+        40%  { left: 3840px; }
+        50%  { left: 3840px; }
+        60%  { left: 1920px; }
+        70%  { left: 1920px; }
+        80%  { left: 1920px; }
+        90%  { left:    0px; }
+        100% { left:    0px; }
+    }
+    .slide-images{
+        width: 7680px;
+        height: 1080px;
+        margin: 0 0 0 -5760px;
+        position: relative;
+        z-index: -1;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 17s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+    .img-container{
+        height: 1080px;
+        width: 1920px;
+        position: relative;
+        float: right;
+    }
+    /*-------------------------------------------------------------------------------- end of animation -------------------------------------------------------------------------------- */
+    .pagingdesktoponly{
+        margin-bottom: 120px;
+    }
+    .pagingtop{
+        margin-top: 250px;
     }
 }
 
