@@ -49,6 +49,7 @@ a{
 .headerbg{
     background-color: #A4BFEB;
     margin-bottom: 5px;
+    width: 100%;
 }
 .slider-frame{
     margin-top: 15px;
@@ -198,11 +199,9 @@ a{
 .chisei{
     border: 2px solid red;
 }
-footer{
-    width: 100%;
-}
 footer > div{
     background-color: #A4BFEB;
+    width: 100%;
 }
 footer .column{
     padding: 10px 0px;
@@ -273,6 +272,31 @@ footer h4{
     padding-right: 20px;
 }
 
+/* -------------------------------------------------------------- Prodotti -------------------------------------------------------------- */
+.producttypebox > p{
+    text-align: center;
+}
+.paddingproducts{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.producttitle{
+    font-size: 36px;
+    text-decoration: 2px underline white;
+    font-weight: normal;
+    font-family: 'Pridi';
+}
+.producttextspacing{
+    margin-bottom: 26px;
+    padding: 0 15px;
+}
+    /* used in shop img too */
+.resizeproduct-img{
+    object-fit: cover;
+    width: 500px;
+    padding: 0 15px;
+}
+
 /*-------------------------------------------------------------- mediaquery ------------------------------------------------------ */
 @media (min-width:864px){
     .moveright{
@@ -337,5 +361,16 @@ footer h4{
     .pagingtop{
         margin-top: 250px;
     }
+    .producttypebox{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .producttypebox > p{
+        text-align: left;
+        padding: 15px;
+    }
+
 }
 
