@@ -195,9 +195,6 @@ a{
     justify-content: center;
     align-items: center;
 }
-.chisei{
-    border: 2px solid red;
-}
 footer > div{
     background-color: #A4BFEB;
     width: 100%;
@@ -374,5 +371,10 @@ footer h4{
         padding: 15px;
     }
 
+}
+
+/* --------------------------------------------------------------------------------  debuging tools  --------------------------------------------------------------------------------*/
+.chisei{
+    border: 2px solid red;
 }
 
