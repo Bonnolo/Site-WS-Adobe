@@ -62,7 +62,7 @@ a{
     width: 388px;
 }
     /* -------------------------------------------------------------------------------- Animation -------------------------------------------------------------------------------- */
-@-webkit-keyframes slide_animation{
+@keyframes slide_animation{
     0%   { left: 1164px;}
     10%  { left: 1164px;}
     20%  { left: 1164px;}
@@ -72,8 +72,8 @@ a{
     60%  { left: 388px; }
     70%  { left: 388px; }
     80%  { left: 388px; }
-    90%  { left:    0px;}
-    100% { left:    0px;}
+    90%  { left:   0px; }
+    100% { left:   0px; }
 }
 .slide-images{
     width: 1552px;
@@ -81,11 +81,11 @@ a{
     margin: 0 0 0 -1164px;
     position: relative;
     z-index: -1;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 17s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
+    animation-name: slide_animation;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
 .img-container{
     height: 220px;
@@ -322,7 +322,7 @@ footer h4{
         width: 100%; /* Full width */
     }
     /*--------------------------------------------------------------------------------------- animation ---------------------------------*/
-    @-webkit-keyframes slide_animation{
+    @keyframes slide_animation{
         0%   { left: 5760px; }
         10%  { left: 5760px; }
         20%  { left: 5760px; }
@@ -341,11 +341,11 @@ footer h4{
         margin: 0 0 0 -5760px;
         position: relative;
         z-index: -1;
-        -webkit-animation-name: slide_animation;
-        -webkit-animation-duration: 17s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-play-state: running;
+        animation-name: slide_animation;
+        animation-duration: 17s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
     }
     .img-container{
         height: 1080px;
